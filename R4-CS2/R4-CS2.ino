@@ -8,22 +8,22 @@
 //**********************************INCLUDE*************************************
 
 //*********************************VARIABLES************************************
-int tempAigua = 101;
+int tempAigua = 100;
 //***********************************SETUP**************************************
 void setup()              
 {
-  Serial.begin(9600);     
-
-  if (tempAigua <100)
+  Serial.begin(9600); 
+  if (tempAigua < 100)
   {
     Serial.print("Aigua encara no bull");
-
-  else 
   }
-  Serial.print("Aigua bullint"); 
+  else
+  {
+    Serial.print("Aigua bullint");
+  }
 }
 //************************************LOOP**************************************
-void loop()   // we need this to be here even though its empty
+void loop()   
 {
 }
 //**********************************FUNCIONS************************************

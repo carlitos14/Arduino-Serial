@@ -1,29 +1,36 @@
 /*******************************************************************************
 **                                                                            **      
-**                           TITOL: HELLO WORLD (PART 3)                      **
+**                        TITOL: R4-CONTROL STRUCTURES (PART 3)               **
 **                                                                            **  
 **                                                                            **
-**  NOM: CARLOS RODRIGUEZ                                   DATA: 21/12/2016  **
+**  NOM: CARLOS RODRIGUEZ                                   DATA: 11/01/2016  **
 *******************************************************************************/
 //**********************************INCLUDE*************************************
 
-
 //*********************************VARIABLES************************************
-
-
+int tempAigua =105 ;
 //***********************************SETUP**************************************
-
-void setup()                // run once, when the sketch starts
+void setup()              
 {
-  Serial.begin(9600);       // set up Serial library at 9600 bps
-}
+  Serial.begin(9600);
+   
+  if (tempAigua < 90)
+  {
+    Serial.print("Aigua encara no bull");
+  }
+  else if (tempAigua >= 90 & tempAigua < 100)
+  {
+    Serial.print("Aigua a punt de bullir");
+  }
+  else if (tempAigua >100)
+  
 
+   {
+    Serial.print("Aigua bullint");
+  }
+}
 //************************************LOOP**************************************
-
-void loop()                 // run over and over again
+void loop()   
 {
-  Serial.println("Hello world!");  
-  delay(1000);
 }
-
 //**********************************FUNCIONS************************************

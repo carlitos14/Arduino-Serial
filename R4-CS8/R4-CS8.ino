@@ -1,26 +1,30 @@
 /*******************************************************************************
 **                                                                            **      
-**                        TITOL: R4-CONTROL STRUCTURES (PART 1                **
+**                        TITOL: R4-CONTROL STRUCTURES (PART 8)               **
 **                                                                            **  
 **                                                                            **
-**  NOM: CARLOS RODRIGUEZ                                   DATA: 09/01/2016  **
+**  NOM: CARLOS RODRIGUEZ                                   DATA: 19/01/2016  **
 *******************************************************************************/
 //**********************************INCLUDE*************************************
 
 //*********************************VARIABLES************************************
-int tempAigua = 100;
+int comptar = 26;
+int i = 0;
 //***********************************SETUP**************************************
-void setup()              // run once, when the sketch starts
+void setup()               // run once, when the sketch starts
 {
   Serial.begin(9600);     // set up Serial library at 9600 bps
-
-  if (tempAigua > 100)
+  Serial.print("Ara comptare de 0 a ");
+  Serial.println(comptar);  
+   while(i <= comptar)
   {
-    Serial.print("Aigua supera els 100C, esta bullint!");
+    Serial.print(i);
+    Serial.print("-");
+    i++;
   } 
 }
 //************************************LOOP**************************************
-void loop()   // we need this to be here even though its empty
+void loop()   
 {
 }
 //**********************************FUNCIONS************************************
